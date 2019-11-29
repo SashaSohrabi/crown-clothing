@@ -5,7 +5,6 @@ import Directory from "../../components/directory/directory.component";
 const HomePage = prop => (
   <div className="homepage">
     <Directory />
-    {console.log(prop)}
   </div>
 );
 
