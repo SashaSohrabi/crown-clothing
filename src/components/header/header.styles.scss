@@ -20,8 +20,24 @@
     justify-content: flex-end;
 
     .option {
+      position: relative;
       padding: 10px 15px;
       cursor: pointer;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width .3s ease-in-out;
+        width: 0;
+        height: 4px;
+        background-color: #808282;
+      }
+      &:hover::after {
+        width: 60%;
+      }
     }
   }
 }
